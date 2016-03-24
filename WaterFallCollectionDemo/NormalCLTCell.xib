@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NormalCLTCell" customModule="WaterFallCollectionDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lwi-F8-h5F">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="TCO-WS-Dkc"/>
+                            <constraint firstAttribute="width" constant="40" id="Ykg-WG-cGt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ost-fQ-9fW">
+                        <rect key="frame" x="55" y="8" width="137" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ost-fQ-9fW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="KhA-I4-YQX"/>
+                <constraint firstItem="ost-fQ-9fW" firstAttribute="leading" secondItem="Lwi-F8-h5F" secondAttribute="trailing" constant="7" id="bCu-5h-znT"/>
+                <constraint firstItem="Lwi-F8-h5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="qVu-Ck-CbT"/>
+                <constraint firstItem="Lwi-F8-h5F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="txr-Ei-LLW"/>
+                <constraint firstAttribute="trailing" secondItem="ost-fQ-9fW" secondAttribute="trailing" constant="8" id="y8P-nz-Zhn"/>
+            </constraints>
+            <connections>
+                <outlet property="label" destination="ost-fQ-9fW" id="aiD-eO-IxA"/>
+                <outlet property="proImg" destination="Lwi-F8-h5F" id="BEq-yo-vlR"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="239"/>
+        </collectionViewCell>
+    </objects>
+</document>

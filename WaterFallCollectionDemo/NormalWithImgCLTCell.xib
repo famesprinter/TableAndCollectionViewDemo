@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VfE-bo-GIu" customClass="NormalWithImgCLTCell" customModule="WaterFallCollectionDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="163"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMQ-Cl-Pmz">
+                        <rect key="frame" x="8" y="8" width="184" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="8gA-EM-MaO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds6-Tg-Ti8">
+                        <rect key="frame" x="55" y="116" width="137" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-UM-16f">
+                        <rect key="frame" x="8" y="116" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="bUI-eP-2kw"/>
+                            <constraint firstAttribute="height" constant="40" id="v6p-hN-2s0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bn0-UM-16f" firstAttribute="leading" secondItem="nMQ-Cl-Pmz" secondAttribute="leading" id="2ym-pV-eJP"/>
+                <constraint firstItem="nMQ-Cl-Pmz" firstAttribute="leading" secondItem="VfE-bo-GIu" secondAttribute="leadingMargin" id="6I4-be-qQ2"/>
+                <constraint firstItem="ds6-Tg-Ti8" firstAttribute="trailing" secondItem="nMQ-Cl-Pmz" secondAttribute="trailing" id="E5d-GH-7YY"/>
+                <constraint firstItem="ds6-Tg-Ti8" firstAttribute="leading" secondItem="Bn0-UM-16f" secondAttribute="trailing" constant="7" id="HFc-GX-FsA"/>
+                <constraint firstItem="nMQ-Cl-Pmz" firstAttribute="top" secondItem="VfE-bo-GIu" secondAttribute="topMargin" id="Ie6-OX-XV3"/>
+                <constraint firstItem="Bn0-UM-16f" firstAttribute="top" secondItem="nMQ-Cl-Pmz" secondAttribute="bottom" constant="8" id="Rwa-9G-aNv"/>
+                <constraint firstItem="nMQ-Cl-Pmz" firstAttribute="trailing" secondItem="VfE-bo-GIu" secondAttribute="trailingMargin" id="jy8-IZ-3wM"/>
+                <constraint firstItem="ds6-Tg-Ti8" firstAttribute="top" secondItem="Bn0-UM-16f" secondAttribute="top" id="zQ4-1Y-acX"/>
+            </constraints>
+            <size key="customSize" width="200" height="163"/>
+            <connections>
+                <outlet property="img" destination="nMQ-Cl-Pmz" id="XLA-Of-ytX"/>
+                <outlet property="label" destination="ds6-Tg-Ti8" id="zS6-cU-50J"/>
+                <outlet property="proImg" destination="Bn0-UM-16f" id="2lk-3Z-GBp"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="290.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
